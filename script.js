@@ -128,7 +128,7 @@ form.addEventListener("submit", function (e) {
 
     const allergies = form.querySelector("textarea").value;
 
-    fetch("http://127.0.0.1:8000/generate-plan", {
+    fetch("https://nutriai-vyze.onrender.com", {
 
         method: "POST",
 
