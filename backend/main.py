@@ -11,10 +11,12 @@ import os
 
 load_dotenv()
 
-API_KEY = os.getenv("GROQ_API_KEY")
+API_KEY = os.environ.get("GROQ_API_KEY")
+
+print("GROQ KEY STATUS:", "FOUND" if API_KEY else "MISSING")
 
 if not API_KEY:
-    raise ValueError("GROQ_API_KEY not found in .env file")
+    raise ValueError("GROQ_API_KEY environment variable missing")
 
 client = OpenAI(
     api_key=API_KEY,
