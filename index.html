@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>NutriAI | AI Nutrition Plan Generator</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Animated Background -->
+
+    <div class="background-animation"></div>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav>
+
+        <div class="logo">
+
+            <img src="assets/logo.png" alt="logo">
+
+            <h2>NutriAI</h2>
+
+        </div>
+
+        <ul>
+
+            <li><a href="#home">Home</a></li>
+
+            <li><a href="#features">Features</a></li>
+
+            <li><a href="#planner">Planner</a></li>
+
+            <li><a href="#about">About</a></li>
+
+        </ul>
+
+        <button id="themeToggle">
+
+            <i class="fa-solid fa-moon"></i>
+
+        </button>
+
+    </nav>
+
+    <!-- ================= HERO ================= -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-left">
+
+            <h1>
+
+                AI Nutrition <br>
+
+                Plan Generator
+
+            </h1>
+
+            <p>
+
+                Personalized meal recommendations powered by Artificial Intelligence.
+
+                Generate nutrition plans according to your health conditions,
+
+                dietary preferences, and wellness goals.
+
+            </p>
+
+            <button class="primary-btn">
+
+                Get Started
+
+            </button>
+
+        </div>
+
+        <div class="hero-right">
+
+            <!-- Replace with your image -->
+
+            <img src="assets/hero.png"
+                alt="Nutrition">
+
+        </div>
+
+    </section>
+
+    <!-- ================= FEATURES ================= -->
+
+    <section id="features">
+
+        <h2 class="section-title">
+
+            Why Choose NutriAI?
+
+        </h2>
+
+        <div class="features">
+
+            <div class="card">
+
+                <i class="fa-solid fa-heart-pulse"></i>
+
+                <h3>Disease Specific</h3>
+
+                <p>
+
+                    Personalized diet plans for Diabetes,
+
+                    Hypertension,
+
+                    Obesity,
+
+                    Kidney Disease and more.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-robot"></i>
+
+                <h3>AI Powered</h3>
+
+                <p>
+
+                    Uses Generative AI
+
+                    to generate
+
+                    customized nutrition plans.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-bowl-food"></i>
+
+                <h3>Healthy Meals</h3>
+
+                <p>
+
+                    Balanced breakfast,
+
+                    lunch,
+
+                    dinner,
+
+                    snacks,
+
+                    calories
+
+                    and hydration.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-chart-line"></i>
+
+                <h3>Track Goals</h3>
+
+                <p>
+
+                    Weight Loss,
+
+                    Weight Gain,
+
+                    Muscle Building,
+
+                    Healthy Lifestyle.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FORM ================= -->
+
+    <section id="planner">
+
+        <h2 class="section-title">
+
+            Nutrition Planner
+
+        </h2>
+
+        <div class="planner-container">
+
+            <form id="nutritionForm">
+
+                <div class="input-group">
+
+                    <label>Name</label>
+
+                    <input type="text"
+                        placeholder="Enter Name"
+                        required>
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Age</label>
+
+                    <input type="number"
+                        required>
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Gender</label>
+
+                    <select>
+
+                        <option>Male</option>
+
+                        <option>Female</option>
+
+                        <option>Other</option>
+
+                    </select>
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Height (cm)</label>
+
+                    <input type="number">
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Weight (kg)</label>
+
+                    <input type="number">
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Medical Condition</label>
+
+                    <select>
+
+                        <option>None</option>
+
+                        <option>Diabetes</option>
+
+                        <option>Hypertension</option>
+
+                        <option>Kidney Disease</option>
+
+                        <option>Obesity</option>
+
+                        <option>Heart Disease</option>
+
+                        <option>PCOS</option>
+
+                        <option>Pregnancy</option>
+
+                    </select>
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Activity Level</label>
+
+                    <select>
+
+                        <option>Sedentary</option>
+
+                        <option>Light</option>
+
+                        <option>Moderate</option>
+
+                        <option>Active</option>
+
+                    </select>
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Food Preference</label>
+
+                    <select>
+
+                        <option>Vegetarian</option>
+
+                        <option>Non Vegetarian</option>
+
+                        <option>Vegan</option>
+
+                    </select>
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Goal</label>
+
+                    <select>
+
+                        <option>Weight Loss</option>
+
+                        <option>Weight Gain</option>
+
+                        <option>Maintain Weight</option>
+
+                        <option>Muscle Gain</option>
+
+                    </select>
+
+                </div>
+
+                <div class="input-group full">
+
+                    <label>Food Allergies</label>
+
+                    <textarea
+                        rows="4"
+                        placeholder="Mention Allergies (Optional)"></textarea>
+
+                </div>
+
+                <button type="submit"
+                    class="generate-btn">
+
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                    Generate Nutrition Plan
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- ================= LOADING ================= -->
+
+    <section class="loading hidden">
+
+        <div class="loader"></div>
+
+        <h3>
+
+            AI is generating your personalized nutrition plan...
+
+        </h3>
+
+    </section>
+
+    <!-- ================= RESULT ================= -->
+
+    <section id="result">
+
+        <h2 class="section-title">
+
+            Generated Nutrition Plan
+
+        </h2>
+
+        <div class="result-card">
+
+            <div id="planOutput">
+
+                <h3>
+
+                    Your personalized nutrition plan will appear here.
+
+                </h3>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about">
+
+        <div class="about">
+
+            <div>
+
+                <!-- Replace Image -->
+
+                <img src="assets/doctor.png"
+                    alt="Doctor">
+
+            </div>
+
+            <div>
+
+                <h2>
+
+                    About NutriAI
+
+                </h2>
+
+                <p>
+
+                    NutriAI is an Artificial Intelligence powered
+
+                    healthcare assistant designed to generate
+
+                    personalized meal plans based on user health
+
+                    conditions, nutritional requirements, and
+
+                    dietary preferences.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <h2>NutriAI</h2>
+
+        <p>
+
+            AI Powered Nutrition Planning System
+
+        </p>
+
+        <div class="socials">
+
+            <i class="fab fa-linkedin"></i>
+
+            <i class="fab fa-github"></i>
+
+            <i class="fab fa-instagram"></i>
+
+        </div>
+
+        <p>
+
+            © 2026 All Rights Reserved
+
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
