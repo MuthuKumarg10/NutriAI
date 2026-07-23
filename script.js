@@ -128,7 +128,7 @@ form.addEventListener("submit", function (e) {
 
     const allergies = form.querySelector("textarea").value;
 
-    fetch("https://nutriai-vyze.onrender.com", {
+    fetch("https://nutriai-vyze.onrender.com/generate-plan", {
 
         method: "POST",
 
